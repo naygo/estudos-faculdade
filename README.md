@@ -27,4 +27,4 @@ As branches principais dos repositórios de origem foram importadas sem squash, 
 
 O arquivo `ORIGENS.json` registra os nomes, branches e commits usados na consolidação. O histórico completo, incluindo outras branches e tags, também foi guardado em backups locais antes da publicação.
 
-Os repositórios de origem não foram excluídos por esta consolidação. Este acervo é privado porque inclui material que já era privado.
+Os repositórios de origem não foram excluídos por esta consolidação. Este acervo é público como registro dos estudos realizados na faculdade.
