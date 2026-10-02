@@ -1,0 +1,19 @@
+import { Component } from '@angular/core';
+import { MessageService } from 'primeng/api';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'Arty Shinestore';
+
+  constructor(
+    private messageService: MessageService
+  ) {}
+
+  onReject() {
+    this.messageService.clear('c');
+  }
+}

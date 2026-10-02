@@ -1,0 +1,67 @@
+.produtos {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+
+  align-items: center;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 2rem;
+}
+
+.produtos div h2 {
+  text-align: center;
+}
+
+.produtos .pesquisa form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.produtos .pesquisa div.p-input-icon-right {
+  width: 80%;
+}
+
+/*
+* * LISTAGEM DE PRODUTOS
+*/
+.produtos-listagem {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem 2rem;
+
+  margin-top: 2rem;
+}
+
+.produtos-listagem div {
+  width: 100%;
+}
+
+.produtos-listagem div img {
+  width: 100%;
+
+  border: 1px solid var(--white);
+  border-radius: 12px;
+
+  transition: transform 0.5s;
+}
+
+.produtos-listagem div img:hover {
+  border: 2px solid var(--salmon);
+}
+
+.produtos-listagem div img:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.produtos .pesquisa p-dropdown .p-dropdown {
+  margin-right: 0.5rem;
+  width: 250px
+}

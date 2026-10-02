@@ -1,0 +1,151 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+h2 {
+  padding-bottom: 2rem;
+}
+
+p {
+  line-height: 3rem;
+  font-size: 1.5em;
+}
+
+.apresentacao > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.apresentacao > div .underline {
+  width: 25%;
+}
+
+/**
+* *  ESPAÇAMENTO ENTRE SEÇÕES
+**/
+.produtos-artesanais {
+  margin: 10rem 0;
+}
+
+.tudo-com-cuidado {
+  margin-bottom: 10rem;
+}
+
+/**
+* *  APRESENTAÇÃO
+**/
+
+.apresentacao {
+  height: 80vh;
+  text-align: center;
+
+  display: grid;
+  grid-template-rows: 1fr ;
+  gap: 1rem;
+
+  align-items: center;
+}
+
+.apresentacao .imagem {
+  width: 100%;
+}
+
+.apresentacao .imagem img {
+  width: 100%;
+}
+
+/**
+* *  PRODUTOS ARTESANAIS &&
+* *  TUDO COM CUIDADO
+**/
+section.produtos-artesanais,
+section.tudo-com-cuidado {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.produtos-artesanais,
+.tudo-com-cuidado {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.produtos-artesanais .texto,
+.tudo-com-cuidado .texto {
+  width: 50%;
+}
+
+.linha {
+  border-top: 3px solid var(--pink);
+
+  width: 5%;
+  padding-bottom: 20px;
+}
+
+/**
+* *  TUDO COM CUIDADO
+**/
+.tudo-com-cuidado .texto {
+  text-align: right;
+}
+
+.tudo-com-cuidado .linha {
+  margin-left: auto;
+}
+
+/**
+* *  CONFERIR PRODUTOS
+**/
+.conferir-produtos {
+  display: flex;
+  align-items: center;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  background-color: var(--grey-background);
+  backdrop-filter: blur(5px);
+
+  color: var(--white);
+  border-radius: 5px;
+  padding: 3rem 5rem;
+}
+
+.conferir-produtos .div-botao,
+.conferir-produtos.texto {
+  display: flex;
+  justify-content: center;
+}
+
+.conferir-produtos .div-botao button {
+  padding: 2rem 3rem;
+  font-size: 1.5rem;
+}
+
+.conferir-produtos .div-botao button:hover {
+  background-color: var(--salmon);
+}
+
+.conferir-produtos a {
+  padding-bottom: 1px;
+  border-bottom: 3px solid var(--salmon);
+}
+
+.conferir-produtos a:hover {
+  color: var(--salmon);
+}
+
+
+

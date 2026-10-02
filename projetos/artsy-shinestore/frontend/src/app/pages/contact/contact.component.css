@@ -1,0 +1,97 @@
+.titulo {
+  margin-bottom: 5rem;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo h2 {
+  text-align: center;
+}
+
+.titulo p {
+  font-size: 1.2rem;
+}
+
+label {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+
+  align-items: center;
+
+  background: var(--grey-background);
+  backdrop-filter: blur(5px);
+
+  border-radius: 10px;
+  padding: 3rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs input {
+  margin-bottom: 2rem;
+  width: 90%;
+}
+
+.inputs textarea {
+  width: 90%;
+  height: 200px;
+  margin-bottom: 2rem;
+
+  overflow-y: auto;
+  resize: none;
+}
+
+.imagem {
+  text-align: center;
+}
+
+.conteudo .botoes {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botoes .enviar {
+  width: 60%;
+}
+
+.botoes .whatsapp {
+  width: 10%;
+  background: var(--green-whatsapp);
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botoes .whatsapp img {
+  width: 25px;
+
+}
+
+.botoes .whatsapp:hover {
+  background: var(--green-whatsapp-light);
+}
+

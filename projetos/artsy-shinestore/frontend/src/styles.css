@@ -1,0 +1,135 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --black: #121214;
+  --grey: #a7a9be;
+  --grey-cancel: #8e8fa1;
+  --grey-dark: #202024;
+  --grey-dark-hover: #29292e;
+  --grey-background: #cbcbd410;
+  --white: #fffffe;
+  --orange: #F46D32;
+  --orange-light: #F0804F;
+  --yellow: #ff8906;
+  --pink: #e53170;
+  --salmon: #f25f4c;
+  --red: #E83F5B;
+  --green-whatsapp: #0EC244;
+  --green-whatsapp-light: #46C26B;
+}
+
+form, input {
+  width: 100%;
+}
+
+button.navbar-toggler {
+  background: var(--salmon);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--black) url("./assets/fundo.svg");
+  background-attachment: fixed;
+  color: var(--white);
+}
+
+body, input, textarea, button, label {
+  font: 300 1rem 'JetBrains Mono', sans-serif !important;
+  color: var(--grey);
+}
+
+p {
+  font: 300 1rem 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, label {
+  color: var(--white);
+}
+
+h1, h2 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+  cursor: pointer;
+
+  font-weight: 400;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: var(--yellow);
+}
+
+.underline {
+  border: 1px solid var(--salmon);
+  opacity: 0.7;
+  width: 10%;
+}
+
+button {
+    height: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+    border-radius: 5px !important;
+
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 700;
+
+    transition: 0.2s !important;
+
+    text-transform: uppercase;
+}
+
+.confirm {
+  background: var(--yellow);
+}
+
+.cancel {
+  background: var(--grey-cancel);
+}
+
+button:hover {
+  background: var(--salmon);
+}
+
+
+/* Structure */
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+table {
+  color: white;
+}
+
+table th {
+  color: var(--yellow);
+}
+
+.p-button {
+  background: var(--yellow) !important;
+  border: 0 !important;
+}
+
+.p-button:hover {
+  background: var(--salmon) !important; 
+  transition: 0.2s;
+}

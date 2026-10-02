@@ -1,0 +1,34 @@
+<main class="container mt-4">
+  <section class="produtos">
+    <div class="titulo">
+      <h2>PRODUTOS</h2>
+      <div class="underline"></div>
+    </div>
+
+    <div class="pesquisa">
+      <form [formGroup]="form" (submit)="sendForm()">
+            <p-dropdown
+              id="categorias"
+              [options]="categorias"
+              [placeholder]="placeholder"
+              formControlName="categorias"
+              panelStyleClass="fundo-p-dropdown">
+            </p-dropdown>
+
+            <div class="p-input-icon-right">
+              <i class="pi pi-search"></i>
+              <input type="text" placeholder="Pesquisar" pInputText />
+            </div>
+        </form>
+    </div>
+  </section>
+
+  <section class="cards">
+    <div class="produtos-listagem">
+      <div *ngFor="let produto of products">
+        <img (click)="infoProduto(produto)" src="{{produto.img_link}}" alt="">
+      </div>
+    </div>
+  </section>
+
+</main>

@@ -1,0 +1,30 @@
+.acoes {
+    width: 40px;
+    height: 40px;
+}
+
+.espera {
+    background: grey;
+}
+
+.andamento {
+    background: yellow;
+}
+
+.concluido {
+    background: green;
+}
+
+.cancelado {
+    background: red;
+}
+
+button{
+    cursor: inherit;
+    border-radius: 50% !important;
+    margin-right: 1rem;
+}
+
+.ativo {
+    border: 3px solid var(--pink);
+}
