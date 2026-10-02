@@ -1,0 +1,42 @@
+<div class="container">
+
+  <div class="row mt-5 mb-5">
+    <h1>Título da Página</h1>
+  </div>
+
+  <div class="row">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Nome do entretenimento" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Pesquisar</button>
+    </div>
+  </div>
+
+
+  <div class="d-flex flex-column justify-content-around mt-3">
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">Categoria</th>
+          <th scope="col">Curtidas</th>
+          <th scope="col">Ações</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let item of items">
+        <tr>
+          <td>{{item.name}}</td>
+          <td>{{item.category}}</td>
+          <td>{{item.likes}}</td>
+          <td>
+            <button type="button" class="btn btn-primary btn-sm mr-2">Editar</button>
+            <button type="button" class="btn btn-secondary btn-sm">Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+</div>
+
