@@ -24,7 +24,3 @@ Cada projeto permanece em uma pasta própria, com seus arquivos e instruções o
 ## Histórico e origem
 
 As branches principais dos repositórios de origem foram importadas sem squash, preservando seus commits e autores. Os commits antigos mantêm os caminhos originais; os arquivos atuais estão organizados em `projetos/`.
-
-O arquivo `ORIGENS.json` registra os nomes, branches e commits usados na consolidação. O histórico completo, incluindo outras branches e tags, também foi guardado em backups locais antes da publicação.
-
-Os repositórios de origem não foram excluídos por esta consolidação. Este acervo é público como registro dos estudos realizados na faculdade.
